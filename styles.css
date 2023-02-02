@@ -1,0 +1,136 @@
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container-fluid {
+    padding: 2% 12%;
+    padding-top: 150px;
+}
+
+
+h1 {
+    font-weight: 700;
+    color: black;
+    font-size: 5rem;
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .container-fluid{
+        padding-top: 75px;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Navbar */
+.navbar-custom-container {
+    padding: 0% 12%;
+}
+
+.navbar-brand {
+    width: 200px;
+}
+
+.navbar-logo {
+    width: 100%;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1rem;
+}
+
+.navbar-toggler {
+    border: 0 none;
+}
+
+
+/* Pages */
+@media (min-width: 992px) {
+
+    .pages {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll; 
+        height: 100vh;
+    }
+    
+    .fs {
+        height: 100vh;
+        scroll-snap-align: start ;
+    }
+
+    .custom-fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+          
+    }
+
+}
+
+
+/* Cover */
+/* #cover {
+    background-image: url(pics/oil-cover.jpg);
+    background-size: cover;
+    height: 100vh;
+}*/
+
+#cover {
+    /* height: 100vh; */
+    display: block;
+    position: relative;
+}
+
+#cover::after {
+    content: "";
+    background-image: url(pics/oil-cover.jpg);
+    background-size: cover;
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/* Services */
+.services-img {
+    padding-top: 50px;
+}
+
+
+/* Strategy */
+#strategy {
+    background-color: #F3F1F5;
+}
+
+
+/* Projects */
+
+
+/* About */
+#about {
+    background-color: #F3F1F5;
+}
+
+
+/* Contact */
+
+
