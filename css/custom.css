@@ -1,0 +1,24 @@
+html {
+    scroll-behavior:smooth
+}
+
+@media (max-width: 992px) {
+    .img-adapt-1 {
+        width: 40%;
+    }
+
+    .img-adapt-2 {
+        width: 50%;
+    }
+
+    .strat-text {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 993px) {
+    .strat-text {
+        text-align: left;
+    }
+}
